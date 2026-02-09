@@ -1,0 +1,21 @@
+CREATE TABLE IF NOT EXISTS `leads` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `telefone` varchar(50) DEFAULT NULL,
+  `instagram` varchar(255) DEFAULT NULL,
+  `ramo` varchar(255) DEFAULT NULL,
+  `faturamento_raw` varchar(255) DEFAULT NULL,
+  `faturamento_categoria` varchar(50) DEFAULT NULL COMMENT '0-10k, 10-50k, 50-200k, 200k+',
+  `invest_raw` varchar(255) DEFAULT NULL,
+  `invest_categoria` varchar(50) DEFAULT NULL,
+  `objetivo` text,
+  `faz_trafego` varchar(10) DEFAULT 'Não',
+  `tags_ai` text COMMENT 'JSON array of tags',
+  `score_potencial` int(3) DEFAULT 0,
+  `urgencia` enum('baixa','média','alta') DEFAULT 'baixa',
+  `status_kanban` varchar(50) DEFAULT 'Cold' COMMENT 'Mapped to revenue categories usually',
+  `resumo_ai` text,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
