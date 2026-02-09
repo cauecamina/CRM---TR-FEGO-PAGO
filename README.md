@@ -59,3 +59,4 @@ Dependendo do faturamento classificado, o lead cai automaticamente na coluna cor
 O visual utiliza Tailwind CSS via CDN. Para alterar cores:
 1. Edite o `script` de configuração do Tailwind no `<head>` do `index.php` e `admin/kanban.php`.
 2. As cores principais são definidas em `tailwind.config` dentro dos arquivos HTML.
+
