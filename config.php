@@ -7,7 +7,7 @@ define('DB_PASS', '');
 
 // Configurações da API Gemini
 // Substitua pela sua chave real
-define('GEMINI_API_KEY', 'AIzaSyAoJThEib9oIAJnDlbPeTPtvsPGJW3W6VQ'); 
+define('GEMINI_API_KEY', 'SUA CHAVE API AQUI'); 
 
 // Configurações de Acesso Admin
 define('ADMIN_USER', 'admin');

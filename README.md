@@ -25,7 +25,7 @@ define('DB_USER', 'seu_usuario');
 define('DB_PASS', 'sua_senha');
 
 // API Gemini
-define('GEMINI_API_KEY', 'SAIzaSyAoJThEib9oIAJnDlbPeTPtvsPGJW3W6VQ');
+define('GEMINI_API_KEY', 'SUA CHAVE API AQUI');
 
 // URL Base (Importante para redirecionamentos)
 define('BASE_URL', 'http://localhost/caminho/do/projeto');
